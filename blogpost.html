@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descripción breve del post del blog">
+    <title>Título del Blog Post</title>
+    <link rel="stylesheet" href="Estilos/Css.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Título del Blog Post</h1>
+        <p>Publicado el <time datetime="2023-09-13">13 de septiembre de 2023</time> por <a href="#">Autor del Post</a></p>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h2>Introducción</h2>
+                <p>Este es el primer párrafo del post de blog donde introduces el tema principal.</p>
+            </section>
+
+            <section>
+                <h2>Subtítulo del Tema Principal</h2>
+                <p>Aquí desarrollas más el contenido, presentando tus ideas de forma clara y estructurada.</p>
+                <p>Puede incluir listas, citas, imágenes, etc.</p>
+
+                <!-- Imagen en el post -->
+                <figure>
+                    <img src="imagen.jpg" alt="Descripción de la imagen" />
+                    <figcaption>Descripción de la imagen o fuente.</figcaption>
+                </figure>
+
+                <!-- Lista -->
+                <ul>
+                    <li>Punto importante 1</li>
+                    <li>Punto importante 2</li>
+                    <li>Punto importante 3</li>
+                </ul>
+
+                <!-- Cita -->
+                <blockquote>
+                    "Esta es una cita relevante para el tema del post."
+                </blockquote>
+            </section>
+
+            <section>
+                <h2>Conclusión</h2>
+                <p>Resumen final del tema tratado, con tus observaciones finales o llamado a la acción para los lectores.</p>
+            </section>
+        </article>
+
+        <!-- Sección de comentarios -->
+        <section id="comentarios">
+            <h2>Comentarios</h2>
+            <form action="/comentario" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="5" required></textarea>
+
+                <button type="submit">Enviar Comentario</button>
+            </form>
+
+            <div id="comentarios-previos">
+                <h3>Comentarios anteriores:</h3>
+                <ul>
+                    <li><strong>Usuario 1:</strong> Gran post, me ha encantado.</li>
+                    <li><strong>Usuario 2:</strong> Muy interesante, gracias por compartir.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mi Blog. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="/privacidad">Política de Privacidad</a></li>
+                <li><a href="/terminos">Términos y Condiciones</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
